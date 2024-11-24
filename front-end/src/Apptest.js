@@ -63,7 +63,7 @@ function App() {
         if (a.category < b.category) return -1;
         if (a.category > b.category) return 1;
         if (a.category === b.category) {
-          return a.id - b.id;  // 在相同的 category 中，根據 id 排序
+          return a.id - b.id;
         }
         return 0;
       });

@@ -25,30 +25,7 @@ const Checkout = () => {
     const dispatch = useDispatch();
     const cartQuantities = cartitems.map(item => item.cartQuantity);
     let total = localStorage.getItem("totalValue");
-//     const [sum, setSum] = useState(total);
-//         useEffect(()=>{
-//         cartitems.forEach(item => {
-//             console.log(allChProducts.All[item.id-1].title)
-//             console.log(item.title)
-//             if(Lan === "繁體中文"){
-//                 setItemTitle(allChProducts.All[item.id-1].title)
-//               } else if(Lan === "简体中文"){
-//                 setItemTitle(allSimpleChProducts.All[item.id-1].title)
-//               } else if(Lan === "English"){
-//                 setItemTitle(allEngProducts.All[item.id-1].title)
-//               }
-//           total += item.price * item.cartQuantity * moneyData[moneyIndex].currency;
-//         });
-      
-//         if (total <= 0) {
-//           setSum(0);
-//           localStorage.setItem("totalValue", 0);
-//         } else {
-//           setSum(total);
-//         }
-// }
 
-    // , [ cartQuantities, cartitems, moneyIndex, Lan])
     const handleAddToCart = (item, curr) => {
         dispatch(addToCart(item));
         dispatch(addPrice({productId: item.id}));

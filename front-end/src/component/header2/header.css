@@ -9,7 +9,6 @@
 }
 
 .nav2 ul {
-  /* width: 100vw; */
   list-style: none;
   display: flex;
   justify-content: center;
@@ -93,10 +92,6 @@
 
   right: 20px;
 }
-
-/* .sidebar {
-  display: none;
-} */
 
 .sidebar-left li {
   width: 100%;
