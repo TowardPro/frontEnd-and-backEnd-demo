@@ -44,9 +44,7 @@ const LowerHeader = () => {
 </ul>
 
 <ul className={["/", "/productInfo", "/maintenance/", "/legalization", "/product/", "/about-us/", "/privacy", "/maintenanceEng/"].includes(pathname) ? 'main2 show' : 'main2'}>
-    {/* <div className='shopName'>
-<h1><Link to="/" style={{ textDecoration: "none", color:"black" }}>{t("shopName")}</Link></h1>
-</div> */}
+
     <ul>
     <li className="hideOnMobile" id=""><Link
     className='link-item'

@@ -34,7 +34,6 @@ const Register = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data, "userRegister");
           if (data.status == "ok") {
             alert("Registration Successful");
           } else {

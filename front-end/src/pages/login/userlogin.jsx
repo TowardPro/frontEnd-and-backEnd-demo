@@ -15,7 +15,6 @@ const navigate = useNavigate()
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(email, password);
     fetch("http://localhost:5000/login-user", {
       method: "POST",
       crossDomain: true,
@@ -31,7 +30,6 @@ const navigate = useNavigate()
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data, "userRegister");
         if (data.status == "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
@@ -48,7 +46,6 @@ const navigate = useNavigate()
           })
             .then((res) => res.json())
             .then((data) => {
-              console.log(data, "userPurchaseRecord");
               setChooseRecord(data);
               setLogin(true)
               navigate("/profile/");
@@ -89,7 +86,6 @@ const navigate = useNavigate()
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data, "userPurchaseRecord");
             setLogin(true)
             navigate("/profile/");
           });

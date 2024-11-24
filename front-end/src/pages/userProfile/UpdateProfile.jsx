@@ -61,7 +61,6 @@ function updateEmail(e) {
   })      .then((res) => res.json())
   .then((data) => {
     window.localStorage.setItem("useremail", email);
-    console.log(data, "updated");
     if (data.status == "ok") {
       alert("update successful");    
     }
@@ -79,7 +78,6 @@ function updateEmail(e) {
     }),
   })      .then((res) => res.json())
   .then((data) => {
-    console.log(data, "userRegister");
     if (data.status == "ok") {
       alert("update successful");    
     }

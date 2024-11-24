@@ -21,8 +21,6 @@ const [date, setDate] = useState('')
   const mytoken = localStorage.getItem('token');
   
   const useremail = localStorage.getItem('useremail');
-  console.log(mytoken)
-  console.log(useremail)
 
   useEffect(()=>{
     fetch(`http://localhost:5000/profile?token=${mytoken}&useremail=${useremail}`, {

@@ -21,7 +21,6 @@ const cartSlice = createSlice({
         toast.info("Increased product quantity", { position: "bottom-left" });
       } else {
         state.cartItems.push({ id, title, image, price, cartQuantity: 1 });
-        console.log(price)
         toast.success("Product added to cart", { position: "bottom-left" });
       }
 

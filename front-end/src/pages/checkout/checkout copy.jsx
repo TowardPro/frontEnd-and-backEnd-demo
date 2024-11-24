@@ -21,7 +21,6 @@ const Checkout = () => {
     const navigate = useNavigate();
     const [itemTitle, setItemTitle] = useState()
     const {setQty, Total, moneyIndex, Lan} = useContext(ShowContext);
-    console.log(Total)
     const dispatch = useDispatch();
     const cartQuantities = cartitems.map(item => item.cartQuantity);
     let total = localStorage.getItem("totalValue");
